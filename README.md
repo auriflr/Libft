@@ -1,7 +1,8 @@
+*This project (libft) has been created as part of the 42 curriculum by afloris.*
 #LIBFT
 
 ##DISCLAIMER: 
-this is not a subject accurate version of Libft, but a version of Libft that I modified for future projects
+this is not a subject accurate version of Libft, but a version of Libft that I modified for future projects.
 
 ###SECTION 1: ft_fd
 What is a file descriptor? -> A file descriptor is
