@@ -1,0 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: babyf <babyf@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/12/23 12:28:25 by afloris           #+#    #+#             */
+/*   Updated: 2026/03/11 13:16:02 by babyf            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "../include/libft.h"
+
+void	*ft_calloc(size_t count, size_t size)
+{
+	size_t			tot_size;
+	void			*ptr;
+
+	if (size != 0 && count > ((size_t) - 1) / size)
+		return (NULL);
+	tot_size = count * size;
+	ptr = malloc(tot_size);
+	if (ptr == NULL)
+		return (NULL);
+	ft_bzero(ptr, tot_size);
+	return (ptr);
+}
